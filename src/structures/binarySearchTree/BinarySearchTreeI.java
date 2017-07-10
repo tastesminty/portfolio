@@ -7,7 +7,7 @@ import java.util.List;
 public interface BinarySearchTreeI<E> extends CollectionI<E>{
 	
 	
-	//Set 1 (incl contains(), add(), size() and clear() in CollectionI, leave toArray())
+	
 	/**
 	 * Helper method for testing
 	 * @return
@@ -15,58 +15,49 @@ public interface BinarySearchTreeI<E> extends CollectionI<E>{
 	public TreeNodeI<E> getRoot();
 	
 	
-	//Set 2 (incl toArray() and equals())
+	
 	/**
-	 * Describe
-	 * @return what?
+	 * @return   all of the values in the BST in ascending order
 	 */
 	public List<E> getValuesInAscOrder();
 	/**
-	 * Describe
-	 * @return what?
+	 * @return what? all of the values in the BST in descending order
 	 */
 	public List<E> getValuesInDesOrder();
 
 	
 	/**
-	 * Describe
-	 * @return what?
+	 *  @return highest values
 	 */
 	public E getMaxValue();
 
 	/**
-	 * Describe
-	 * @return what?
+	 
+	 * @return lowest value in tree
 	 */
 	public E getMinValue();
 
 
-	/**
-	 * Describe
-	 * @return what?
+	/** 
+	 * @return number of levels in tree
 	 */
 	public int getHeight();
 	
 	//Set 3
 	/**
-	 * Describe
-	 * @return what?
+	 * @return get the node holding the next lower value 
 	 */
 	public TreeNodeI<E> getPredecessor(TreeNodeI<E> examine);
 	
-	/**
-	 * Describe
-	 * @return what?
+	/** 
+	 * @return  get the node holding the next higher value 
 	 */
 	public TreeNodeI<E> getSuccessor(TreeNodeI<E> examine);
 
-	/**
-	 * Describe
-	 * @return what?
+	/** 
+	 * @return remove node from tree with matching value
 	 */
 	public boolean remove(E val);
-	
-	//Set 5
-	//public LinkedList<V> getValuesInBreadthFirstOrder();
+	 
 	
 }

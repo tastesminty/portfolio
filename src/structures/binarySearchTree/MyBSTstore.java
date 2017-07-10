@@ -7,7 +7,7 @@ import java.util.List;
 import structures.CollectionI;
 
 /**
- * Describe
+ * Binary Search Tree store implementation
  * @author Danny Navarro
  *
  * @param <V> Generic value of the elements of the tree
